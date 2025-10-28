@@ -47,7 +47,7 @@ ksp = "2.0.0-1.0.21"
 maps-compose = "3.1.1"
 material = "1.11.0"
 # @keep
-minSdk = "21"
+minSdk = "23"
 okhttp = "4.11.0"
 play-services-wearable = "18.1.0"
 robolectric = "4.12.1"
