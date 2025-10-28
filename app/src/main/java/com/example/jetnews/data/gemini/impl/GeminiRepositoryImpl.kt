@@ -19,19 +19,20 @@ package com.example.jetnews.data.gemini.impl
 import com.example.jetnews.data.gemini.GeminiRepository
 import com.example.jetnews.model.Post
 import com.google.firebase.Firebase
-import com.google.firebase.vertexai.type.HarmBlockThreshold
-import com.google.firebase.vertexai.type.HarmCategory
-import com.google.firebase.vertexai.type.SafetySetting
-import com.google.firebase.vertexai.type.generationConfig
-import com.google.firebase.vertexai.vertexAI
+import com.google.firebase.ai.FirebaseAI
+import com.google.firebase.ai.ai
+import com.google.firebase.ai.type.GenerativeBackend
+import com.google.firebase.ai.type.HarmBlockThreshold
+import com.google.firebase.ai.type.HarmCategory
+import com.google.firebase.ai.type.SafetySetting
+import com.google.firebase.ai.type.generationConfig
 
 class GeminiRepositoryImpl: GeminiRepository {
 
 
-    private val generativeModel = Firebase
-        .vertexAI
+    private val generativeModel = Firebase.ai(backend = GenerativeBackend.googleAI())
         .generativeModel(
-            modelName = "gemini-1.5-flash",
+            modelName = "gemini-2.5-flash",
             generationConfig = generationConfig {
                 temperature = 0f
             },

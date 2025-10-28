@@ -81,8 +81,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 
     buildFeatures {
@@ -142,7 +142,7 @@ dependencies {
 
     implementation(libs.google.android.material)
 
-    implementation(libs.vertex.ai)
+    implementation(libs.firebase.ai)
     implementation(platform(libs.firebase.bom))
 
     androidTestImplementation(libs.junit)

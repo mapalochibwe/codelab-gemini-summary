@@ -47,7 +47,7 @@ ksp = "2.0.0-1.0.21"
 maps-compose = "3.1.1"
 material = "1.11.0"
 # @keep
-minSdk = "21"
+minSdk = "23"
 okhttp = "4.11.0"
 play-services-wearable = "18.1.0"
 robolectric = "4.12.1"
@@ -58,8 +58,7 @@ secrets = "2.0.1"
 # @keep
 targetSdk = "33"
 version-catalog-update = "0.8.4"
-vertex-ai = "16.0.0"
-firebase-bom = "33.4.0"
+firebase-bom = "34.4.0"
 google-service = "4.4.2"
 
 [libraries]
@@ -168,8 +167,8 @@ roborazzi-compose = { module = "io.github.takahirom.roborazzi:roborazzi-compose"
 roborazzi-rule = { module = "io.github.takahirom.roborazzi:roborazzi-junit-rule", version.ref = "roborazzi" }
 rometools-modules = { module = "com.rometools:rome-modules", version.ref = "rome" }
 rometools-rome = { module = "com.rometools:rome", version.ref = "rome" }
-vertex-ai = { module = "com.google.firebase:firebase-vertexai", version.ref = "vertex-ai"}
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom"}
+firebase-ai = { module = "com.google.firebase:firebase-ai" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
